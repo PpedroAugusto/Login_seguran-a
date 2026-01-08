@@ -40,14 +40,16 @@ auth_system/
 
 ## 🧠 O que aprendi com este projeto
 
-Este projeto foi fundamental para solidificar conhecimentos em Backend e Segurança:
+* **Este projeto foi fundamental para solidificar conhecimentos em Backend e Segurança:**
 
-Hashing vs Encriptação: Entendi que senhas não devem ser descriptografadas, mas sim comparadas via Hash.
+* **Hashing vs Encriptação: Entendi que senhas não devem ser descriptografadas, mas sim comparadas via Hash.**
 
-MySQL Connector: Aprendi a conectar o Python a um banco de dados real (Server-based) em vez de apenas arquivos locais.
+* **MySQL Connector: Aprendi a conectar o Python a um banco de dados real (Server-based) em vez de apenas arquivos locais.**
 
-Boas Práticas (Security First): A importância de usar .gitignore e python-dotenv para proteger credenciais sensíveis.
+* **Boas Práticas (Security First): A importância de usar .gitignore e python-dotenv para proteger credenciais sensíveis.**
 
-Refatoração: Como transformar um código "spaghetti" em módulos organizados e reutilizáveis.
+* **Refatoração: Como transformar um código "spaghetti" em módulos organizados e reutilizáveis.**
 
-Desenvolvido por [Pedro Augusto].
+---
+
+Desenvolvido por **Pedro Augusto**.

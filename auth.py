@@ -25,9 +25,9 @@ def register():
     nome = input("Digite seu nome: ")
     while True:
         email = input("Digite seu email: ").strip()
-        cursor.execute("SELECT email FROM usuarios WHERE email = '%s'", (email,))
+        cursor.execute('SELECT email FROM usuarios WHERE email = %s', (email,))
         resultados = cursor.fetchall()
-        if resultados is None:
+        if not resultados:
             break
         
         else:
@@ -43,17 +43,14 @@ def register():
     
     
 def log_in():
-    cursor.execute('SELECT * FROM usuarios')
-    resultados = cursor.fetchall()
-
     while True: 
         email_digitado = input("Email: ")
-        for usuario in resultados:
-            id, nome, email, hash_do_banco = usuario
-            if email == email_digitado:
-                senha_digitada = input("Senha: ")
-                check(senha_digitada, hash_do_banco, nome)
-                break
+        cursor.execute('SELECT nome, email, senha_hash FROM usuarios WHERE email = %s',(email_digitado,))
+        resultados = cursor.fetchall()
+        if resultados:
+            senha_digitada = input("Senha: ")
+            check(senha_digitada, resultados[0][2], resultados[0][0])
+            break
         else:
             print("Email não encontrado")
                 

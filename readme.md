@@ -40,7 +40,7 @@ auth_system/
 
 ## 🧠 O que aprendi com este projeto
 
-* **Este projeto foi fundamental para solidificar conhecimentos em Backend e Segurança:**
+Este projeto foi fundamental para solidificar conhecimentos em Backend e Segurança:
 
 * **Hashing vs Encriptação: Entendi que senhas não devem ser descriptografadas, mas sim comparadas via Hash.**
 
